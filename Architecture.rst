@@ -13,22 +13,31 @@ Diagram
 More indepth
 ------------
 
-LabEnv1: 
+LabEnv1:
   - vlan248:
      - DHCP for Management of devices
-     - /32 static routes when required
-  - vlan249: 
+        - adc01.meeksnet.ca
+        - adc02.meeksnet.ca
+        - cm01.bigiq8.meeksnet.ca
+        - dcd01.bigiq8.meeksnet.ca
+  - vlan249:
      - layer2 to the servers 
      - layer3 default route
-  - vlan255
-     - Discovery
 
-LabEnv2: 
+LabEnv2:
   - vlan250:
      - DHCP for Management of devices
      - /32 static routes when required
-  - vlan251: 
-     - layer2 to the servers 
+  - vlan251:
+     - layer2 to the servers
      - layer3 default route
+
+Production
   - vlan255
-     - Discovery
+
+
+
+
+
+self document, itself, to create itself
+nginx+docker+readthedocs+f5xc
