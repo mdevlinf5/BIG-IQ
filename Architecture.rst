@@ -15,19 +15,18 @@ More indepth
 
 LabEnv1:
   - vlan248:
-     - DHCP for Management of devices
-        - adc01.meeksnet.ca
-        - adc02.meeksnet.ca
-        - cm01.bigiq8.meeksnet.ca
-        - dcd01.bigiq8.meeksnet.ca
+     - adc01.meeksnet.ca
+     - adc02.meeksnet.ca
+     - cm01.bigiq8.meeksnet.ca
+     - dcd01.bigiq8.meeksnet.ca
   - vlan249:
      - layer2 to the servers 
      - layer3 default route
 
 LabEnv2:
   - vlan250:
-     - DHCP for Management of devices
-     - /32 static routes when required
+     - adc01-dr.meeksnet.ca
+     - adc02-dr.meeksnet.ca
   - vlan251:
      - layer2 to the servers
      - layer3 default route
@@ -41,3 +40,9 @@ Production
 
 self document, itself, to create itself
 nginx+docker+readthedocs+f5xc
+
+
+
+
+sphinx 5.3.0 has requirement importlib-metadata>=4.8; python_version < "3.10", but you'll have importlib-metadata 3.7.3 which is incompatible.
+sphinx-js 3.0.1 has requirement Jinja2<3.0,>2.0, but you'll have jinja2 3.0.3 which is incompatible.
